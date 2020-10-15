@@ -2,7 +2,6 @@
 <sdf version="1.4">
   <model name="lidar">
     <link name="link">
-      <gravity>0</gravity>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
