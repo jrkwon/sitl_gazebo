@@ -15,6 +15,12 @@
           <izz>1.8e-7</izz>
         </inertia>
       </inertial>
+      <collision name='collision'>
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.05</length></cylinder>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
       <visual name="visual">
         <geometry>
           <cylinder><radius>0.06</radius><length>0.05</length></cylinder>
