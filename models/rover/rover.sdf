@@ -854,11 +854,11 @@
     <!-- start of section: add camera by kwon -->
     <include>
       <uri>model://fpv_cam</uri>
-      <pose>0.2 0 2.0 0 0 0</pose>
+      <pose>0.3 0 2.0 0 0 0</pose>
     </include>
     <joint name="fpv_cam_joint" type="fixed">
-      <child>fpv_cam::link</child>
-      <parent>base_link</parent>
+      <child>fpv_cam::cam_link</child>
+      <parent>rover::base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -868,14 +868,14 @@
       </axis>
     </joint>
     <!-- end of section -->
-    <!-- start of section: add lidar by kwon -->
+    <!-- start of section: add lidar by kwon !! not working !! -->
     <include>
-      <uri>model://lidar</uri>
+      <uri>model://hokuyo</uri>
       <pose>1.5 0 0.8 0 0 0</pose>
     </include>
-    <joint name="lidar_joint" type="fixed">
-      <child>lidar::link</child>
-      <parent>base_link</parent>
+    <joint name="hokuyo_joint" type="fixed">
+      <child>hokuyo::hokuyo_link</child>
+      <parent>rover::base_link</parent>
     </joint>    
     <!-- end of section -->
     <include>
