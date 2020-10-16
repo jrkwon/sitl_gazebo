@@ -854,7 +854,7 @@
     <!-- start of section: add camera by kwon -->
     <include>
       <uri>model://fpv_cam</uri>
-      <pose>0.3 0 2.0 0 0 0</pose>
+      <pose>0.31 0 1.97 0 0 0</pose>
     </include>
     <joint name="fpv_cam_joint" type="fixed">
       <child>fpv_cam::cam_link</child>

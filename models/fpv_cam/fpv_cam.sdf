@@ -16,9 +16,13 @@
         </inertial>
         <collision name='collision'>
           <geometry>
-            <box>
+            <!-- box>
               <size>0.1 0.1 0.1</size>
-            </box>
+            </box -->
+            <cylinder>
+              <radius>0.021</radius>
+              <length>0.029</length>
+            </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
@@ -33,9 +37,13 @@
         </collision>
         <visual name='visual'>
           <geometry>
-            <box>
+            <!-- box>
               <size>0.1 0.1 0.1</size>
-            </box>
+            </box -->
+            <cylinder>
+              <radius>0.021</radius>
+              <length>0.029</length>
+            </cylinder>
           </geometry>
         </visual>
         <sensor name='camera' type='camera'>
