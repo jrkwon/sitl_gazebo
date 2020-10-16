@@ -868,7 +868,7 @@
       </axis>
     </joint>
     <!-- end of section -->
-    <!-- start of section: add lidar by kwon !! not working !! -->
+    <!-- start of section: add lidar by kwon -->
     <include>
       <uri>model://hokuyo</uri>
       <pose>1.5 0 0.8 0 0 0</pose>
@@ -876,7 +876,7 @@
     <joint name="hokuyo_joint" type="fixed">
       <child>hokuyo::hokuyo_link</child>
       <parent>rover::base_link</parent>
-    </joint>    
+    </joint>
     <!-- end of section -->
     <include>
       <uri>model://gps</uri>
