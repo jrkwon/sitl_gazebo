@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-    <model name='fpv_cam'>
+    <model name='bimi_cam'>
       <pose>0 0 0 0 -0 0</pose>
       <link name='cam_link'>
         <inertial>
@@ -60,7 +60,7 @@
           <plugin name='camera_plugin' filename='libgazebo_ros_camera.so'>
               <robotNamespace></robotNamespace>
             <alwaysOn>true</alwaysOn>
-            <imageTopicName>image_raw</imageTopicName>
+            <imageTopicName>/bimi_cam/image_raw</imageTopicName>
             <cameraInfoTopicName>camera_info</cameraInfoTopicName>
             <updateRate>30.0</updateRate>
             <cameraName>usb_cam</cameraName>
